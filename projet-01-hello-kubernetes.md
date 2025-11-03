@@ -19,14 +19,6 @@ Expose-la via un `Service NodePort` et accède à ton app via le navigateur.
 
 ---
 
-# 🚀 TP Niveau 1 — Les bases (Pods, Deployments, Services)
-
-### 🎯 Objectif :
-
-Comprendre comment Kubernetes gère les conteneurs, le réseau et la montée en charge.
-
----
-
 ## 1️⃣ Déployer un **Pod simple**
 
 **But** : voir comment Kubernetes exécute un conteneur.
