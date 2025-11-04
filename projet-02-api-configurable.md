@@ -21,9 +21,7 @@ Monte-les dans le conteneur.
 
 ---
 
-Voici uniquement la partie demandée 👇
-
----
+# pratique:
 
 ## 🧩 **Étape 1 — Déploiement**
 
