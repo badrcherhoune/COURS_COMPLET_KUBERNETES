@@ -1,0 +1,38 @@
+# deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: api-configurable
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: api-configurable
+  template:
+    metadata:
+      labels:
+        app: api-configurable
+    spec:
+      containers:
+        - name: api-container
+          image: badrcherhoune/springboot-api-configurable:latest  # ou ton image Docker
+          ports:
+            - containerPort: 8080
+          env:
+            - name: WELCOME_MESSAGE
+              valueFrom:
+                configMapKeyRef:
+                  name: api-configmap
+                  key: WELCOME_MESSAGE
+            - name: DB_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: api-secret
+                  key: DB_PASSWORD
+          volumeMounts:
+            - name: config-volume
+              mountPath: /config
+      volumes:
+        - name: config-volume
+          configMap:
+            name: api-configmap

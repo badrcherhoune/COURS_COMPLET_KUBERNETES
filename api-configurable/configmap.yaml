@@ -1,0 +1,7 @@
+# configmap.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: api-configmap
+data:
+  WELCOME_MESSAGE: "👋 Bienvenue sur l'API Configurable"
