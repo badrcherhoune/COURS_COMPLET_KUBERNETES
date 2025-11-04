@@ -108,5 +108,5 @@ Les pods gérés par un Deployment/ReplicaSet se recréent automatiquement si tu
 
 Si tu veux, je peux te faire **un tableau prêt à copier-coller**, avec toutes les commandes dans l’ordre exact pour Killer Coda, pour que tu puisses suivre ton TP sans te tromper.
 
-Veux‑tu que je fasse ça ?
+
 
